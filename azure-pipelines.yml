@@ -7,6 +7,10 @@ pool:
   demands:
     - Agent.Name -equals azure-devops-agent    #agent name
 
-steps:
+steps:                                          #jobs to run
 - script: echo "Hello World"
   displayName: 'Run Hello World script'
+
+
+- script: echo "code is building"              #actual script that will be executed on azure agent
+  displayName: 'build code job'                #this name will appear on azure devops
