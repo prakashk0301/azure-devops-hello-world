@@ -8,7 +8,7 @@ pool:
     - Agent.Name -equals azure-devops-agent    #agent name
 
 steps:                                          #jobs to run
-- script: echo0 "Hello World"
+- script: echo "Hello World"
   displayName: 'Run Hello World script'
 
 
